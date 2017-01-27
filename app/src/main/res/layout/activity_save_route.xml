@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="top"
+            android:paddingTop="@dimen/dimen_fp_margin_top">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <apps.zambrone.com.carpooling.component.MyFontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen_bill_padding_one"
+                    android:paddingBottom="@dimen/dimen_fp_margin"
+                    android:paddingTop="@dimen/dimen_fp_margin"
+                    android:text="@string/activity_route_instructions"
+                    android:textAlignment="viewStart"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dimen_bill_padding_one">
+
+            <apps.zambrone.com.carpooling.component.MyFontTextView
+
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dimen_bill_padding_one"
+                android:text="@string/activity_route_name"
+                android:textColor="@color/black" />
+
+            <apps.zambrone.com.carpooling.component.MyFontEdittextView
+                android:id="@+id/activity_route_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:ems="10"
+                android:hint="@string/activity_route_name_hint"
+                android:inputType="textEmailAddress" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dimen_bill_padding_one">
+
+
+            <apps.zambrone.com.carpooling.component.MyFontTextView
+                android:id="@+id/login_tv_password"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dimen_bill_padding_one"
+                android:text="@string/activity_route_start"
+                android:textColor="@color/black" />
+
+            <apps.zambrone.com.carpooling.component.MyFontEdittextView
+                android:id="@+id/ed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:ems="10"
+                android:hint="@string/activity_route_start_hint"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.67"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dimen_bill_padding_one">
+
+
+            <apps.zambrone.com.carpooling.component.MyFontTextView
+                android:id="@+id/login_tv_email"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dimen_bill_padding_one"
+                android:text="@string/activity_route_destination"
+                android:textColor="@color/black" />
+
+            <apps.zambrone.com.carpooling.component.MyFontEdittextView
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:ems="10"
+                android:hint="@string/activity_route_destination_hint"
+                android:inputType="textPassword" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_bill_padding_one">
+
+            <apps.zambrone.com.carpooling.component.MyFontButton
+                android:id="@+id/activity_route_btn_save_route"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/color_path"
+                android:gravity="center"
+                android:text="@string/activity_route_btn_find_directions"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_general" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true">
+
+
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:map="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="apps.zambrone.com.carpooling.SaveRouteActivity" />
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+

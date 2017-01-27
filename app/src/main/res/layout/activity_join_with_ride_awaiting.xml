@@ -1,0 +1,81 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="top"
+            android:paddingTop="@dimen/dimen_fp_margin_top">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <apps.zambrone.com.carpooling.component.MyFontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen_bill_padding_one"
+                    android:paddingBottom="@dimen/dimen_fp_margin"
+                    android:paddingTop="@dimen/dimen_fp_margin"
+                    android:text="from xxx to xxx"
+                    android:textAlignment="viewStart"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black" />
+
+
+                <apps.zambrone.com.carpooling.component.MyFontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen_bill_padding_one"
+                    android:paddingBottom="@dimen/dimen_fp_margin"
+                    android:paddingTop="@dimen/dimen_fp_margin"
+                    android:text="Request sent to Stefan. Awaiting acceptance"
+                    android:textAlignment="viewStart"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/black" />
+
+                <apps.zambrone.com.carpooling.component.MyFontButton
+                    android:id="@+id/activity_join_ride_btn_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_margin_register"
+                    android:layout_marginTop="@dimen/activity_margin_register"
+                    android:layout_weight="1"
+                    android:background="@color/color_path"
+                    android:gravity="center"
+                    android:text="Cancel Request"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_general" />
+
+                <include layout="@layout/join_with_ride" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="232dp"
+            tools:context="apps.zambrone.com.carpooling.JoinWithRideAwaiting" />
+    </LinearLayout>
+</ScrollView>

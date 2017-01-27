@@ -1,0 +1,99 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingTop="@dimen/dimen_fp_margin_top"
+        android:weightSum="1">
+
+
+        <apps.zambrone.com.carpooling.component.MyFontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:paddingBottom="@dimen/dimen_fp_margin"
+            android:paddingTop="@dimen/dimen_fp_margin"
+            android:text="@string/welcome"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/black"
+            android:textStyle="normal|bold"
+            android:id="@+id/myFontTextView"
+            android:gravity="top" />
+
+        <ImageView
+            android:id="@+id/ivAppName"
+            android:layout_width="64dp"
+            android:layout_height="94dp"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+
+            android:src="@drawable/car" />
+
+        <apps.zambrone.com.carpooling.component.MyFontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:paddingBottom="@dimen/dimen_fp_margin"
+            android:paddingTop="@dimen/dimen_fp_margin"
+            android:text="@string/app_name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/pale_black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dimen_bill_padding_one"
+        android:orientation="horizontal" >
+
+        <apps.zambrone.com.carpooling.component.MyFontButton
+            android:id="@+id/btnFirstSignIn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_pick_up_loc_text"
+            android:gravity="center"
+            android:text="@string/text_signin"
+            android:textSize="@dimen/size_general"
+            android:textColor="@color/white" />
+
+        <apps.zambrone.com.carpooling.component.MyFontButton
+            android:id="@+id/btnFirstRegister"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_driver_price"
+            android:gravity="center"
+            android:text="@string/text_register"
+            android:textSize="@dimen/size_general"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+    <apps.zambrone.com.carpooling.component.MyFontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:paddingBottom="@dimen/dimen_fp_margin"
+        android:paddingTop="@dimen/dimen_fp_margin"
+        android:text="@string/text_copyright"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/pale_black" />
+
+
+
+</LinearLayout>

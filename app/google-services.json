@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "903571647320",
+    "firebase_url": "https://ride-share-4d4e6.firebaseio.com",
+    "project_id": "ride-share-4d4e6",
+    "storage_bucket": "ride-share-4d4e6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903571647320:android:a476219b290da047",
+        "android_client_info": {
+          "package_name": "apps.zambrone.com.carpooling"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "903571647320-7d36r45ahpajd74cbi69acb1i5quc5ug.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "apps.zambrone.com.carpooling",
+            "certificate_hash": "4808A8BD58C6E23086925CB50CA089D15DB1248F"
+          }
+        },
+        {
+          "client_id": "903571647320-pfn7k24ip29lej6ef3514k3nom5eqcn4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQLnAWZfVQxVC0c6lgmc3jfXjVG48kwWA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "903571647320-pfn7k24ip29lej6ef3514k3nom5eqcn4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

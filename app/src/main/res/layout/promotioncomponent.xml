@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical"
+
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp">
+
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="2dp"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_weight="1.57">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_marginLeft="@dimen/activity_margin_register"
+                android:layout_gravity="center_vertical"
+                android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/listLayoutIcon"
+                    android:layout_width="65dp"
+                    android:src="@drawable/icon_prof"
+                    android:layout_gravity="center"
+                    android:layout_height="55dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/activity_margin_register"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent">
+
+                <apps.zambrone.com.carpooling.component.MyFontTextView
+                    android:paddingTop="@dimen/activity_margin_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+
+                    android:layout_toRightOf="@+id/thumbnail"
+                    android:text="Promotion Title"
+                    android:textColor="#444444"
+                    android:textSize="14sp" />
+
+
+                <apps.zambrone.com.carpooling.component.MyFontTextView
+                    android:paddingTop="@dimen/activity_margin_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/thumbnail"
+                    android:text="Promotion Content"
+                    android:textColor="#444444"
+                    android:textSize="10sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_gravity="center"
+                android:layout_height="match_parent">
+
+                <apps.zambrone.com.carpooling.component.MyFontButton
+                    android:id="@+id/btn_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="View"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
+

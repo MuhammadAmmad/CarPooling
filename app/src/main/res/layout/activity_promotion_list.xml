@@ -1,0 +1,77 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="top"
+            android:paddingTop="@dimen/dimen_fp_margin_top">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <apps.zambrone.com.carpooling.component.MyFontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen_bill_padding_one"
+                    android:paddingBottom="@dimen/dimen_fp_margin"
+                    android:paddingTop="@dimen/dimen_fp_margin"
+                    android:text="Latest promotions here. View to catch your benefits"
+                    android:textAlignment="viewStart"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="@dimen/activity_margin_register"
+                    android:layout_height="wrap_content">
+
+                    <apps.zambrone.com.carpooling.component.MyFontTextViewMedium
+                        android:layout_width="104dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:padding="@dimen/dimen_bill_padding_one"
+                        android:text="Categories"
+                        android:ems="10"
+                        android:id="@+id/editText2" />
+
+
+                </LinearLayout>
+
+                <include layout="@layout/promotioncomponent" />
+                <include layout="@layout/promotioncomponent" />
+                <include layout="@layout/promotioncomponent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <apps.zambrone.com.carpooling.component.MyFontButton
+            android:id="@+id/viewPromot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_path"
+            android:gravity="center"
+            android:text="View"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_general" />
+
+
+
+    </LinearLayout>
+</ScrollView>
