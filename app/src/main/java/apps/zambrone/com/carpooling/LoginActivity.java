@@ -1,14 +1,12 @@
 package apps.zambrone.com.carpooling;
 
-import android.app.ActionBar;
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
-
-
-import apps.zambrone.com.carpooling.component.ButtonEffects;
 
 public class LoginActivity extends AppCompatActivity {
     private AlphaAnimation buttonClick = new AlphaAnimation(1F, 0.8F);

@@ -44,7 +44,7 @@ public class MyFontTextViewMedium extends TextView {
             if (typeface == null) {
                 // Log.i(TAG, "asset:: " + "fonts/" + asset);
                 typeface = Typeface.createFromAsset(ctx.getAssets(),
-                        "fonts/HelveticaNeueMedium.ttf");
+                        "fonts/Roboto-Regular.ttf");
             }
 
         } catch (Exception e) {

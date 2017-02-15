@@ -28,6 +28,7 @@
                     android:id="@+id/ivAppName"
                     android:layout_width="64dp"
                     android:layout_height="94dp"
+
                     android:layout_centerHorizontal="true"
                     android:layout_marginBottom="@dimen/activity_horizontal_margin"
                     android:paddingLeft="@dimen/dimen_bill_padding_one"
@@ -47,9 +48,9 @@
                     android:paddingBottom="@dimen/dimen_fp_margin"
                     android:paddingTop="@dimen/dimen_fp_margin"
                     android:text="Please Sign In to Continue "
-                    android:textAlignment="viewStart"
+
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/textColor" />
             </LinearLayout>
 
         </LinearLayout>
@@ -66,7 +67,7 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="@dimen/dimen_bill_padding_one"
                 android:text="Login As"
-                android:textColor="@color/black" />
+                android:textColor="@color/textColor" />
 
             <Spinner
                 android:id="@+id/spinner"
@@ -85,12 +86,12 @@
 
 
             <apps.zambrone.com.carpooling.component.MyFontTextView
-                android:id="@+id/login_tv_password"
+                android:id="@+id/login_tv_email"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:paddingLeft="@dimen/dimen_bill_padding_one"
                 android:text="Email"
-                android:textColor="@color/black" />
+                android:textColor="@color/textColor" />
 
             <apps.zambrone.com.carpooling.component.MyFontEdittextView
                 android:id="@+id/ed"
@@ -111,12 +112,12 @@
 
 
             <apps.zambrone.com.carpooling.component.MyFontTextView
-                android:id="@+id/login_tv_email"
+                android:id="@+id/login_tv_password"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:paddingLeft="@dimen/dimen_bill_padding_one"
                 android:text="Password"
-                android:textColor="@color/black" />
+                android:textColor="@color/textColor" />
 
             <apps.zambrone.com.carpooling.component.MyFontEdittextView
                 android:id="@+id/editText"
@@ -141,10 +142,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@color/color_path"
+                android:background="@drawable/buttonselector"
                 android:gravity="center"
                 android:text="@string/text_signin"
-                android:textColor="@color/white"
+                android:textColor="@color/btn_textColor"
                 android:textSize="@dimen/size_general" />
         </LinearLayout>
 
@@ -156,7 +157,7 @@
             android:padding="@dimen/dimen_bill_padding_one"
             android:text="@string/text_forgetpass"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            android:textColor="@color/black" />
+            android:textColor="@color/textColor" />
 
         <apps.zambrone.com.carpooling.component.MyFontTextView
             android:id="@+id/myFontTextView4"
@@ -168,7 +169,7 @@
 
             android:text="@string/new_user"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/black" />
+            android:textColor="@color/textColor" />
 
 
     </LinearLayout>
@@ -187,27 +188,47 @@
 
             >
 
-            <apps.zambrone.com.carpooling.component.MyFontButton
-                android:id="@+id/login_activity_btn_register_as_sharer"
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@color/color_pick_up_loc_text"
-                android:gravity="center"
-                android:text="@string/sharer"
-                android:textColor="@color/white"
-                android:textSize="@dimen/size_general" />
+                android:layout_height="match_parent"
+                android:paddingRight="5dp"
+                android:layout_weight="1">
 
-            <apps.zambrone.com.carpooling.component.MyFontButton
-                android:id="@+id/btnFirstRegister"
+                <apps.zambrone.com.carpooling.component.MyFontButton
+                    android:id="@+id/login_activity_btn_register_as_sharer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/buttonselector"
+
+                    android:gravity="center"
+                    android:text="@string/sharer"
+                    android:textColor="@color/btn_textColor"
+                    android:textSize="@dimen/size_general" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@color/color_driver_price"
-                android:gravity="center"
-                android:text="@string/rider"
-                android:textColor="@color/white"
-                android:textSize="@dimen/size_general" />
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:layout_weight="1">
+
+                <apps.zambrone.com.carpooling.component.MyFontButton
+                    android:id="@+id/btnFirstRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttonselector"
+                    android:gravity="center"
+
+                    android:text="@string/rider"
+                    android:textColor="@color/btn_textColor"
+                    android:textSize="@dimen/size_general" />
+            </LinearLayout>
+
         </LinearLayout>
     </RelativeLayout>
 

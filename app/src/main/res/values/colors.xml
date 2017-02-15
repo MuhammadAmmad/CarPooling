@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#ff9d3d</color>
-    <color name="colorPrimaryDark">#E6B96C</color>
+    <color name="colorPrimary">#4d000d</color>
+    <color name="colorPrimaryDark">#fff8f9</color>
     <color name="colorAccent">#414b40</color>
     <color name="white">#ffffffff</color>
+    <color name="textColor">#292727</color>
+    <color name="btn_textColor">#f3eaea</color>
+
     <color name="black">#ff000000</color>
     <color name="dark_blue">#ff003388</color>
     <color name="black_label">#ff1e1e1e</color>
@@ -38,6 +41,7 @@
     <color name="color_header">#e1e1e1</color>
     <color name="color_swipe">#111125</color>
     <color name="color_pick_up_loc_text">#00b830</color>
+    <color name="color_pick_up_loc_text_pressed">#028e26</color>
     <color name="app_back_color">#e1e1e1</color>
     <color name="bill_back_color">#111125</color>
     <!-- Color -->
@@ -61,5 +65,6 @@
     <color name="color_card">#2a2a2a</color>
     <color name="selection_base">#d5d5d5</color>
     <color name="color_path">#A93636</color>
+    <color name="color_pathpressed">#8c2929</color>
 
 </resources>

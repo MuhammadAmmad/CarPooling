@@ -14,8 +14,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
             android:orientation="vertical"
+            android:padding="10dp"
             android:weightSum="1">
 
 
@@ -63,7 +63,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorPrimaryDark"
+                android:background="@color/theme_color"
                 android:gravity="center"
                 android:paddingTop="@dimen/dimen_bill_padding_one"
                 android:paddingBottom="@dimen/dimen_bill_padding_one"
@@ -130,7 +130,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:paddingBottom="@dimen/activity_vertical_margin"
+
                 android:paddingTop="@dimen/activity_vertical_margin">
 
                 <apps.zambrone.com.carpooling.component.MyFontTextViewMedium
@@ -451,18 +451,18 @@
                     android:textColor="@color/color_text_dark"
                     android:textSize="@dimen/size_general"
                     android:visibility="gone"/>
+
+                <apps.zambrone.com.carpooling.component.MyFontButton
+                    android:id="@+id/rider_register_activity_btn_register_as_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/buttonselector"
+                    android:text="Register"
+                    android:textColor="@color/white"
+
+                    />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    <apps.zambrone.com.carpooling.component.MyFontButton
-        android:id="@+id/rider_register_activity_btn_register_as_next"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="@drawable/btn_done"/>
-    </LinearLayout>
 
 </LinearLayout>

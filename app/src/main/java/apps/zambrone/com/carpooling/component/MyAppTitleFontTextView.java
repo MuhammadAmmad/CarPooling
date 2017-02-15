@@ -45,7 +45,7 @@ public class MyAppTitleFontTextView extends TextView {
             if (typeface == null) {
                 // Log.i(TAG, "asset:: " + "fonts/" + asset);
                 typeface = Typeface.createFromAsset(ctx.getAssets(),
-                        "fonts/OPENSANS-BOLD.ttf");
+                        "fonts/Roboto-Regular.ttf");
             }
 
         } catch (Exception e) {

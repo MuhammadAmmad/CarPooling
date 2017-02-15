@@ -1,4 +1,5 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/content_frame"
     android:layout_width="match_parent"
@@ -9,6 +10,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="10dp"
         android:orientation="vertical">
 
 
@@ -16,8 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:gravity="top"
-            android:paddingTop="@dimen/dimen_fp_margin_top">
+            android:gravity="top">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -54,10 +55,10 @@
                     android:layout_marginBottom="@dimen/activity_margin_register"
                     android:layout_marginTop="@dimen/activity_margin_register"
                     android:layout_weight="1"
-                    android:background="@color/color_path"
+                    android:background="@drawable/buttonselector"
                     android:gravity="center"
                     android:text="Cancel Request"
-                    android:textColor="@color/white"
+                    android:textColor="@color/btn_textColor"
                     android:textSize="@dimen/size_general" />
 
                 <include layout="@layout/join_with_ride" />
@@ -67,15 +68,17 @@
         </LinearLayout>
 
 
-
-
-        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:map="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:id="@+id/map"
-            android:name="com.google.android.gms.maps.SupportMapFragment"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="232dp"
-            tools:context="apps.zambrone.com.carpooling.JoinWithRideAwaiting" />
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="232dp"
+                tools:context="apps.zambrone.com.carpooling.JoinWithRideAwaiting" />
+        </RelativeLayout>
+
     </LinearLayout>
 </ScrollView>

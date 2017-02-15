@@ -13,7 +13,7 @@ public class SharerRegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sharer_register);
-        getSupportActionBar().setTitle("Register sharer");
+        getSupportActionBar().setTitle("Add Vehicle");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 

@@ -6,22 +6,21 @@
     android:background="?attr/selectableItemBackground"
     android:orientation="vertical"
 
-    android:paddingBottom="16dp"
-    android:paddingTop="16dp">
+   >
 
     <LinearLayout
         android:id="@+id/thumbnail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_marginRight="10dip"
-        android:layout_marginTop="2dp"
-        >
+        android:layout_margin="10dp"
+        android:layout_alignParentLeft="true">
 
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:weightSum="1"
+
+            android:background="@drawable/border"
             android:layout_weight="1.57">
 
 
@@ -33,26 +32,50 @@
                 android:layout_gravity="center_vertical"
                 android:layout_height="match_parent">
 
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/listLayoutIcon"
-                    android:layout_width="40dp"
-                    android:src="@drawable/default_user"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_height="40dp" />
-
-                <apps.zambrone.com.carpooling.component.MyFontTextView
-
+                <LinearLayout
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:textAlignment="center"
-                    android:paddingTop="@dimen/activity_margin_register"
-                    android:layout_toRightOf="@+id/thumbnail"
-                    android:layout_gravity="center_horizontal"
-                    android:text="Chamith Chathuka"
+                    android:paddingTop="10dp"
+                    android:layout_height="50dp">
 
-                    android:textColor="#444444"
-                    android:textSize="9sp" />
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/listLayoutIcon"
+                        android:layout_width="match_parent"
+                        android:src="@drawable/default_user"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <apps.zambrone.com.carpooling.component.MyFontTextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:textAlignment="center"
+                        android:paddingTop="@dimen/activity_margin_register"
+                        android:layout_toRightOf="@+id/thumbnail"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Chamith Chathuka"
+
+                        android:textColor="@color/textColor"
+                        android:textSize="9sp" />
+
+                    <apps.zambrone.com.carpooling.component.MyFontTextView
+                        android:paddingTop="@dimen/activity_margin_register"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:textAlignment="center"
+                        android:layout_toRightOf="@+id/thumbnail"
+                        android:text="ETA : 8.00 AM"
+                        android:textColor="@color/textColor"
+                        android:textSize="10sp" />
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -60,8 +83,23 @@
                 android:orientation="vertical"
                 android:layout_marginLeft="@dimen/activity_margin_register"
                 android:layout_width="0dp"
-                android:layout_weight="0.5"
+                android:layout_weight="0.375"
+                android:paddingRight="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="2dp"
                 android:layout_height="match_parent">
+
+
+                <apps.zambrone.com.carpooling.component.MyFontTextView
+                    android:paddingTop="@dimen/activity_margin_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textAlignment="center"
+                    android:layout_toRightOf="@+id/thumbnail"
+                    android:text="From : Thalawathugoda"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp" />
 
                 <apps.zambrone.com.carpooling.component.MyFontTextView
                     android:paddingTop="@dimen/activity_margin_register"
@@ -70,49 +108,21 @@
                     android:layout_alignParentTop="true"
                     android:layout_toRightOf="@+id/thumbnail"
                     android:text="Started"
-                    android:textColor="#444444"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColor"
                     android:textSize="10sp" />
 
-
-                <apps.zambrone.com.carpooling.component.MyFontTextView
-                    android:paddingTop="@dimen/activity_margin_register"
+                <apps.zambrone.com.carpooling.component.MyFontButton
+                    android:id="@+id/btn_view"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_toRightOf="@+id/thumbnail"
-                    android:text="ETA : 8.00 AM"
-                    android:textColor="#444444"
-                    android:textSize="10sp" />
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="View"
+                    android:textColor="@color/btn_textColor"
 
-                <apps.zambrone.com.carpooling.component.MyFontTextView
-                    android:paddingTop="@dimen/activity_margin_register"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_toRightOf="@+id/thumbnail"
-                    android:text="From : Thalawathugoda"
-                    android:textColor="#444444"
-                    android:textSize="10sp" />
-
-                <apps.zambrone.com.carpooling.component.MyFontTextView
-                    android:paddingTop="@dimen/activity_margin_register"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_toRightOf="@+id/thumbnail"
-                    android:text="To : Dialog Axiata Union"
-                    android:textColor="#444444"
-                    android:textSize="10sp" />
-
-                <apps.zambrone.com.carpooling.component.MyFontTextView
-                    android:paddingTop="@dimen/activity_margin_register"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_toRightOf="@+id/thumbnail"
-                    android:text="Fare rs. 50.00"
-                    android:textColor="#444444"
-                    android:textSize="10sp" />
+                    android:background="@drawable/buttonselector"
+                    android:layout_gravity="center_vertical"
+                     />
 
 
             </LinearLayout>
@@ -120,31 +130,53 @@
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="0dp"
-                android:layout_weight="0.25"
-                android:weightSum="1"
+                android:layout_weight="0.375"
+android:paddingBottom="2dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
                 android:layout_height="match_parent">
 
-                <apps.zambrone.com.carpooling.component.MyFontButton
-                    android:id="@+id/btn_view"
+                <apps.zambrone.com.carpooling.component.MyFontTextView
+                    android:paddingTop="@dimen/activity_margin_register"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.5"
-                    android:text="View"
-                    android:layout_gravity="center_vertical"
-                     />
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textAlignment="center"
+                    android:layout_toRightOf="@+id/thumbnail"
+                    android:text="To : Dialog Axiata Union"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp"
+                   />
+
+                <apps.zambrone.com.carpooling.component.MyFontTextView
+                    android:paddingTop="@dimen/activity_margin_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/thumbnail"
+                    android:textAlignment="center"
+                    android:text="Fare rs. 50.00"
+                    android:textColor="@color/textColor"
+                    android:textSize="10sp"
+                    />
 
                 <apps.zambrone.com.carpooling.component.MyFontButton
                     android:id="@+id/btn_join"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="0.5"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttonselector"
                     android:layout_gravity="center_vertical"
                     android:text="Join"
+
+                    android:textColor="@color/btn_textColor"
                     app:srcCompat="@color/bill_back_color"
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true" />
+
             </LinearLayout>
+
         </LinearLayout>
     </LinearLayout>
 

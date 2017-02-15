@@ -43,7 +43,7 @@ private boolean setCustomFont(Context ctx, String asset) {
         if (typeface == null) {
             Log.i(TAG, "asset:: " + "fonts/" + asset);
             typeface = Typeface.createFromAsset(ctx.getAssets(),
-                    "fonts/HelveticaNeueMedium.ttf");
+                    "fonts/Roboto-Regular.ttf");
         }
 
     } catch (Exception e) {
