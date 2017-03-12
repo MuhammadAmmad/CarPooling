@@ -39,6 +39,17 @@
                 android:gravity="center"
                 android:text="@string/activity_route_btn_find_directions"
                 android:textColor="@color/white"
+
+                android:textSize="@dimen/size_general" />
+            <apps.zambrone.com.carpooling.component.MyFontButton
+                android:id="@+id/activity_route_btn_chat_win"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/color_path"
+                android:gravity="center"
+                android:text="Chat Window"
+                android:textColor="@color/white"
                 android:textSize="@dimen/size_general" />
         </LinearLayout>
 

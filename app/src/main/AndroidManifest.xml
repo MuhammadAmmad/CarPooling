@@ -76,7 +76,8 @@
             android:name=".RideCompleteActivity"
             android:label="@string/title_activity_ride_complete" />
         <activity android:name=".PromotionActivity" />
-        <activity android:name=".PromotionListActivity"></activity>
+        <activity android:name=".PromotionListActivity" />
+        <activity android:name=".ChatModelActivity"></activity>
     </application>
 
 </manifest>

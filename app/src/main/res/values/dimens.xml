@@ -16,6 +16,9 @@
 
     <integer name="margin_marker">150</integer>
 
+    <!-- Chat Model -->
+    <dimen name="corner_size">4dp</dimen>
+    <dimen name="button_padding">2dp</dimen>
 
     <!--custom component-->
     <dimen name="textup_dimen">2dp</dimen>
@@ -166,16 +169,9 @@
     <dimen name="fab_margin">16dp</dimen>
 
 
-
-
-
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="profile_width">75dp</dimen>
     <dimen name="profile_height">75dp</dimen>
-
-
-
-
 
 
 </resources>

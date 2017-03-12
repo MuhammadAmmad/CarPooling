@@ -67,4 +67,19 @@
     <color name="color_path">#A93636</color>
     <color name="color_pathpressed">#8c2929</color>
 
+
+    <color name="notificationBubble">#055E54</color>
+    <color name="listDivider">#dedede</color>
+    <color name="bg_bubble_self">#E1E1E1</color>
+    <color name="activitylbl">#303F9F</color>
+
+    <!-- Chat Model -->
+    <color name="chatDate">#303F9F</color>
+    <color name="chatSender">#3F51B5</color>
+    <color name="chatReceiver">#3F51B5</color>
+    <color name="border">#a27f7f</color>
+    <color name="counter">#01887A</color>
+
+    <!-- General -->
+
 </resources>

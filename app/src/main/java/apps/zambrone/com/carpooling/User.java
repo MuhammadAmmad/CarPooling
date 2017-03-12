@@ -7,32 +7,43 @@ import com.google.gson.annotations.Expose;
  */
 
 public class User {
-    @Expose
-    private String userName;
-    @Expose
-    private String passwd;
 
-    public User() {
+    String p_username;
+    String p_email;
+    String p_name;
+    String p_icon;
+    String p_status;
+    String p_creation;
+
+    public User(String username)
+    {
+        p_username = username;
     }
 
-    public User(String userName, String passwd) {
-        this.userName = userName;
-        this.passwd = passwd;
+    public User(String username, String email, String name, String icon)
+    {
+        p_username = username;
+        p_name = name;
+        p_icon = icon;
+        p_email = email;
     }
 
-    public String getUserName() {
-        return userName;
+    public User(String username, String email, String name, String icon, String status)
+    {
+        p_username = username;
+        p_name = name;
+        p_icon = icon;
+        p_email = email;
+        p_status = status;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
+    public String getUsername() { return p_username; }
+    public String getEmail() { return p_email; }
+    public String getName() { return p_name; }
+    public String getIcon() { return p_icon; }
+    public String getStatus() { return p_status; }
+    public String getCreation() { return p_creation; }
 
-    public String getPassword() {
-        return passwd;
-    }
-
-    public void setPassword(String password) {
-        this.passwd = password;
-    }
+    public void setStatus(String status) { p_status = status; }
+    public void setCreation(String created_At) { p_creation = created_At; }
 }

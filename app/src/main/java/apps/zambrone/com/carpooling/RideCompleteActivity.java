@@ -43,6 +43,15 @@ public class RideCompleteActivity extends AppCompatActivity implements OnMapRead
 
             }
         });
+        findViewById(R.id.activity_route_btn_chat_win).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(RideCompleteActivity.this,ChatModelActivity.class);
+                startActivity(intent);
+
+            }
+        });
     }
 
 

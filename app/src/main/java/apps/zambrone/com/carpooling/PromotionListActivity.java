@@ -17,6 +17,7 @@ public class PromotionListActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("Promotion List");
 
 
+        
 
     }
     @Override
